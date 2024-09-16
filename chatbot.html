@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="chat.js"></script>
+        <script src="responses.js"></script>
+        <script src="chatbot-page.js"></script>
+        <script src="https://kit.fontawesome.com/33e23a7298.js" crossorigin="anonymous"></script>
+        <title>Menty: Stress and Anxiety Chatbot Website</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <img class="logo" src="logo.png">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME |</a></li>
+                        <li><a href="blog.html">BLOG |</a></li>
+                        <li><a href="services.html">SERVICES |</a></li>
+                        <li><a href="chatbot.html"><b>CHATBOT</b></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>    
+        
+<!-- ChatBot Div Area-->
+        <div class="cb-container"> 
+            <h1 id="cb-heading">Ask Us Questions</h1>
+            <div class="ask-input">
+                <input type="text" id="question-box" onkeydown="if(event.keyCode == 13){chat()}"
+                placeholder="Kindly Tell Us Something">
+            </div>
+            <p id="answer-box">---------- RESPONSE ---------- <br><b><br>INSTRUCTIONS:</b><br>1. Input the Exact Words or<br>2. Type the Number</p>
+        </div>
+        <div class="bot-container">
+            <img id="robot" src="bot.png" >
+        </div>
+<!-- ChatBot Div Area-->
+        <section>
+            <div class="question-container">
+                <h2>Possible Questions</h2>
+                <ul>
+                    <li><span>1</span>When Should I Get Professional Help?</li>
+                    <li><span>2</span>What Self-care Techniques can I Use?</li>
+                    <li><span>3</span>How Can I Control My Stress Effectively?</li>
+                    <li><span>4</span>Can Natural Vitamins Help with Mental Health?</li>
+                    <li><span>5</span>How Can I Increase My Mental Health Resilience?</li>
+                    <li><span>6</span>Can You Recommend Any Ways for Dealing with Anxiety?</li>
+                    <li><span>7</span>How Can I Improve My Quality of Sleep?</li>
+                    <li><span>8</span>How Vital is Diet for Mental Health?</li>
+                    <li><span>9</span>How Can I Boost My Self-Esteem and Enhance my Body Image?</li>
+                </ul>
+            </div>
+    
+            <div class="question-container2">
+                <h2>Possible Questions 2</h2>
+                <ul>
+                    <li><span>10</span>Is Dieting Harmful?</li>
+                    <li><span>11</span>Where Can I Ask Help for Anxiety?</li>
+                    <li><span>12</span>How Do I Deal with and Cope with Sadness and Loss?</li>
+                    <li><span>13</span>How Can I Avoid Thinking Negatively?</li>
+                    <li><span>14</span>How Do Manage and Prevent Burnouts?</li>
+                    <li><span>15</span>How Can I Control and Lessen My Deperession?</li>
+                    <li><span>16</span>What Changes Can I Make to Improve my Mental Health?</li>
+                    <li><span>17</span>Difference Between Positive and Negative Symptomps?</li>
+                    <li><span>18</span>What Causes Stress and Anxiety?<br><br><br></li>
+                </ul>
+            </div>
+        </section>
+    </body>
+
+    <footer>
+
+    </footer>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="chat.js"></script>
+        <script src="responses.js"></script>
+        <script src="chatbot-page.js"></script>
+        <script src="https://kit.fontawesome.com/33e23a7298.js" crossorigin="anonymous"></script>
+        <title>Menty: Stress and Anxiety Chatbot Website</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <img class="logo" src="logo.png">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME |</a></li>
+                        <li><a href="blog.html">BLOG |</a></li>
+                        <li><a href="services.html">SERVICES |</a></li>
+                        <li><a href="chatbot.html"><b>CHATBOT</b></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>    
+        <main>
+            <div class="service-container">
+                <h1>Our Services</h1>
+                <div class="service-row">
+                    <div class="service">
+                        <i class="fa-solid fa-robot"></i>
+                        <h2>24/7 CHATBOT</h2>
+                        <p>24/7 Chatbot Support with the help of our MENTY</p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-globe"></i>
+                        <h2>ONLINE TOOL</h2>
+                        <p>An Online Resource and Tool for Stress and Anxiety Management</p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-person"></i>
+                        <h2>VIRTUAL COUNSELING</h2>
+                        <p>Virtual Counseling Sessions with Licensed Therapists </p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <h2>COMMUNITY SUPPORT</h2>
+                        <p>Share with our Community Support Groups and Forums</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-bar-collapsible">
+                <button id="chat-button" type="button" class="collapsible-button">Chat with MENTY
+                    <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+                </button>
+        
+                <div class="chat-content">
+                    <div class="full-chat-block">
+                        <!-- Message Container -->
+                        <div class="outer-container">
+                            <div class="chat-container">
+                                <!-- Messages -->
+                                <div id="chatbox">
+                                    <h5 id="chat-timestamp"></h5>
+                                    <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                                </div>
+        
+                                <!-- User input box -->
+                                <div class="chat-bar-input-block">
+                                    <div id="userInput">
+                                        <input id="textInput" class="input-box" type="text" name="msg"
+                                            placeholder="Press Enter to Send a Message">
+                                        <p></p>
+                                    </div>
+                                </div>
+
+                                <div id="chat-bar-bottom">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>  
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
